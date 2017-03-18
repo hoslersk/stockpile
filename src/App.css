@@ -2,16 +2,33 @@
   text-align: center;
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 .App-header {
   background-color: #222;
   padding: 8px;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
   font-size: 1.5em;
+  box-shadow: -10px 8px 16px rgba(0, 0, 0, .8);
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .App-header h1 {
   margin: 0px;
+}
+
+.page-content {
+  position: absolute;
+  left: 0px;
+  top: 70px;
+  padding: 16px;
 }
 
 .navbar {
@@ -22,13 +39,20 @@
   background-color: #f1f1f1;
   height: 100%;
   position: fixed;
+  top: 70px;
   overflow: auto;
   right: 0;
+  text-decoration: none;
 }
 
 .navitem {
   padding: 16px;
   font-size: 2.25em;
+}
+
+.navitem a {
+  text-decoration: inherit;;
+  color: inherit;
 }
 
 .navitem:hover {

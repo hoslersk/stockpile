@@ -11,6 +11,7 @@ class App extends Component {
 				<div className="App-header">
 					<h1>Welcome to Stockpile</h1>
 				</div>
+				{this.props.children}
 				<Navbar />
 			</div>
 		);
