@@ -10,6 +10,10 @@
   font-size: 1.5em;
 }
 
+.App-header h1 {
+  margin: 0px;
+}
+
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -23,7 +27,7 @@
 }
 
 .navitem {
-  padding: 32px 16px;
+  padding: 16px;
   font-size: 2.25em;
 }
 
