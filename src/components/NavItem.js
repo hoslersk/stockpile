@@ -3,9 +3,11 @@ import { Link } from 'react-router';
 
 class NavItem extends Component {
 	render() {
-		debugger
 		return(
-			<li className="navitem">
+			<li
+				className={`navitem${this.props.tab === this.props.details.name ? '-active' : ''}`}
+				onClick={this.props.updateTab}
+			>
 				<Link to={this.props.details.link} name={this.props.details.name}>{this.props.details.text}</Link>
 			</li>
 		)
@@ -13,6 +15,8 @@ class NavItem extends Component {
 }
 
 NavItem.Proptypes = {
+	updateTab: PropTypes.func,
+	tab: PropTypes.string,
 	details: PropTypes.shape({
 		text: PropTypes.string,
 		link: PropTypes.string,
