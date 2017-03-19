@@ -9,7 +9,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<div className="App-header">
-					<h1>Welcome to Stockpile</h1>
+					<h1>Stockpile</h1>
 				</div>
 				{this.props.children}
 				<Navbar />
